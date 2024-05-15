@@ -14,7 +14,7 @@
 	import Activity from 'lucide-svelte/icons/activity';
 	import Banknote from 'lucide-svelte/icons/banknote';
 	import CalendarPlus from 'lucide-svelte/icons/calendar-plus';
-	import CalendarClock from 'lucide-svelte/icons/calendar-Clock';
+	import CalendarClock from 'lucide-svelte/icons/calendar-clock';
 	import Coins from 'lucide-svelte/icons/coins';
 	import CreditCard from 'lucide-svelte/icons/credit-card';
 	import Home from 'lucide-svelte/icons/home';
@@ -45,14 +45,14 @@
 			<div class="flex flex-col gap-2 p-2">
 				<a
 					href="/home"
-					class="bg-muted text-primary hover:text-primary flex items-center gap-3 rounded-lg px-3 py-2 transition-all"
+					class="flex items-center gap-3 rounded-lg bg-muted px-3 py-2 text-primary transition-all hover:text-primary"
 				>
 					<Home class="h-4 w-4" />
 					<p class="text-sm font-medium">Home</p>
 				</a>
 				<a
 					href="/Patients"
-					class="text-muted-foreground hover:text-primary flex items-center gap-3 rounded-lg px-3 py-2 transition-all"
+					class="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
 				>
 					<HandHeart class="h-4 w-4" />
 					<p class="text-sm font-medium">Services</p>
@@ -60,28 +60,28 @@
 				<hr />
 				<a
 					href="/Patients"
-					class="text-muted-foreground hover:text-primary flex items-center gap-3 rounded-lg px-3 py-2 transition-all"
+					class="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
 				>
 					<Users class="h-4 w-4" />
 					<p class="text-sm font-medium">Patients</p>
 				</a>
 				<a
 					href="/clearance"
-					class="text-muted-foreground hover:text-primary flex items-center gap-3 rounded-lg px-3 py-2 transition-all"
+					class="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
 				>
 					<CalendarClock class="h-4 w-4" />
 					<p class="text-sm font-medium">Appointments</p>
 				</a>
 				<a
 					href="/clearance"
-					class="text-muted-foreground hover:text-primary flex items-center gap-3 rounded-lg px-3 py-2 transition-all"
+					class="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
 				>
 					<Banknote class="h-4 w-4" />
 					<p class="text-sm font-medium">Billing and Invoicing</p>
 				</a>
 				<a
 					href="/clearance"
-					class="text-muted-foreground hover:text-primary flex items-center gap-3 rounded-lg px-3 py-2 transition-all"
+					class="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
 				>
 					<Activity class="h-4 w-4" />
 					<p class="text-sm font-medium">Reports and Analytics</p>
@@ -90,7 +90,7 @@
 			<div class="flex flex-col gap-2 p-2">
 				<a
 					href="/settings"
-					class="text-muted-foreground hover:text-primary flex items-center gap-3 rounded-lg px-3 py-2 transition-all"
+					class="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
 				>
 					<Settings class="h-4 w-4" />
 					<p class="text-sm font-medium">System Settings</p>
@@ -98,14 +98,14 @@
 				<hr />
 				<a
 					href="/account"
-					class="text-muted-foreground hover:text-primary flex items-center gap-3 rounded-lg px-3 py-2 transition-all"
+					class="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
 				>
 					<UserCog class="h-4 w-4" />
 					<p class="text-sm font-medium">Account Settings</p>
 				</a>
 				<a
 					href="/settings"
-					class="text-muted-foreground flex items-center gap-3 rounded-lg px-3 py-2 transition-all hover:bg-red-700 hover:text-white"
+					class="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:bg-red-700 hover:text-white"
 				>
 					<Logout class="h-4 w-4" />
 					<p class="text-sm font-medium">Logout</p>
@@ -155,41 +155,41 @@
 							<Card.Root>
 								<Card.Header class="flex flex-row items-center justify-between space-y-0 pb-2">
 									<Card.Title class="text-sm font-medium">Patients Scheduled</Card.Title>
-									<Users class="text-muted-foreground h-4 w-4" />
+									<Users class="h-4 w-4 text-muted-foreground" />
 								</Card.Header>
 								<Card.Content>
 									<div class="text-3xl font-bold">000</div>
-									<p class="text-muted-foreground text-xs">--/--/----</p>
+									<p class="text-xs text-muted-foreground">--/--/----</p>
 								</Card.Content>
 							</Card.Root>
 							<Card.Root>
 								<Card.Header class="flex flex-row items-center justify-between space-y-0 pb-2">
 									<Card.Title class="text-sm font-medium">Patients Served</Card.Title>
-									<UserCheck class="text-muted-foreground h-4 w-4" />
+									<UserCheck class="h-4 w-4 text-muted-foreground" />
 								</Card.Header>
 								<Card.Content>
 									<div class="text-3xl font-bold">000</div>
-									<p class="text-muted-foreground text-xs">--/--/----</p>
+									<p class="text-xs text-muted-foreground">--/--/----</p>
 								</Card.Content>
 							</Card.Root>
 							<Card.Root>
 								<Card.Header class="flex flex-row items-center justify-between space-y-0 pb-2">
 									<Card.Title class="text-sm font-medium">Patients Remaining</Card.Title>
-									<UserX class="text-muted-foreground h-4 w-4" />
+									<UserX class="h-4 w-4 text-muted-foreground" />
 								</Card.Header>
 								<Card.Content>
 									<div class="text-3xl font-bold">000</div>
-									<p class="text-muted-foreground text-xs">--/--/----</p>
+									<p class="text-xs text-muted-foreground">--/--/----</p>
 								</Card.Content>
 							</Card.Root>
 							<Card.Root>
 								<Card.Header class="flex flex-row items-center justify-between space-y-0 pb-2">
 									<Card.Title class="text-sm font-medium">Patient in Queue</Card.Title>
-									<Activity class="text-muted-foreground h-4 w-4" />
+									<Activity class="h-4 w-4 text-muted-foreground" />
 								</Card.Header>
 								<Card.Content>
 									<div class="text-3xl font-bold">000</div>
-									<p class="text-muted-foreground text-xs">--/--/----</p>
+									<p class="text-xs text-muted-foreground">--/--/----</p>
 								</Card.Content>
 							</Card.Root>
 						</div>
@@ -311,7 +311,7 @@
 														</Table.Cell>
 														<Table.Cell class="flex flex-col">
 															<div class="font-bold">WANG MALOU</div>
-															<div class="text-muted-foreground text-xs md:inline">3000187592</div>
+															<div class="text-xs text-muted-foreground md:inline">3000187592</div>
 														</Table.Cell>
 														<Table.Cell class="hidden sm:table-cell">
 															<div class="font-medium">----/--/-- | 00:00:00</div>
@@ -329,7 +329,7 @@
 														</Table.Cell>
 														<Table.Cell class="flex flex-col">
 															<div class="font-bold">LIM MADDIE</div>
-															<div class="text-muted-foreground text-xs md:inline">3000019758</div>
+															<div class="text-xs text-muted-foreground md:inline">3000019758</div>
 														</Table.Cell>
 														<Table.Cell class="hidden sm:table-cell">
 															<div class="font-medium">----/--/-- | 00:00:00</div>
@@ -347,7 +347,7 @@
 														</Table.Cell>
 														<Table.Cell class="flex flex-col">
 															<div class="font-bold">LEE CAO-A</div>
-															<div class="text-muted-foreground text-xs md:inline">3000085140</div>
+															<div class="text-xs text-muted-foreground md:inline">3000085140</div>
 														</Table.Cell>
 														<Table.Cell class="hidden sm:table-cell">
 															<div class="font-medium">----/--/-- | 00:00:00</div>
@@ -365,7 +365,7 @@
 														</Table.Cell>
 														<Table.Cell class="flex flex-col">
 															<div class="font-bold">NOLA ARIA</div>
-															<div class="text-muted-foreground text-xs md:inline">3000017883</div>
+															<div class="text-xs text-muted-foreground md:inline">3000017883</div>
 														</Table.Cell>
 														<Table.Cell class="hidden sm:table-cell">
 															<div class="font-medium">----/--/-- | 00:00:00</div>
@@ -383,7 +383,7 @@
 														</Table.Cell>
 														<Table.Cell class="flex flex-col">
 															<div class="font-bold">DANQUIT JONATHAN</div>
-															<div class="text-muted-foreground text-xs md:inline">3000117298</div>
+															<div class="text-xs text-muted-foreground md:inline">3000117298</div>
 														</Table.Cell>
 														<Table.Cell class="hidden sm:table-cell">
 															<div class="font-medium">----/--/-- | 00:00:00</div>
@@ -401,7 +401,7 @@
 														</Table.Cell>
 														<Table.Cell class="flex flex-col">
 															<div class="font-bold">KHO MA. AZONA</div>
-															<div class="text-muted-foreground text-xs md:inline">3000019778</div>
+															<div class="text-xs text-muted-foreground md:inline">3000019778</div>
 														</Table.Cell>
 														<Table.Cell class="hidden sm:table-cell">
 															<div class="font-medium">----/--/-- | 00:00:00</div>
@@ -419,7 +419,7 @@
 														</Table.Cell>
 														<Table.Cell class="flex flex-col">
 															<div class="font-bold">GUETTA LON</div>
-															<div class="text-muted-foreground text-xs md:inline">3000018758</div>
+															<div class="text-xs text-muted-foreground md:inline">3000018758</div>
 														</Table.Cell>
 														<Table.Cell class="hidden sm:table-cell">
 															<div class="font-medium">----/--/-- | 00:00:00</div>
